@@ -80,7 +80,7 @@
                         <ul class="navbar-nav navbar-nav-right">
                             <!-- Home -->
                             <li class="nav-item">
-                                <a class="nav-item-child active" href="index.html">
+                                <a class="nav-item-child" href="index.html">
                                     Home
                                 </a>
                             </li>
@@ -88,7 +88,7 @@
 
                             <!-- Dataset -->
                             <li class="nav-item">
-                                <a class="nav-item-child" href="dataset.html">
+                                <a class="nav-item-child active" href="dataset.html">
                                     Dataset
                                 </a>
                             </li>
@@ -118,62 +118,203 @@
         <!-- Navbar -->
     </header>
     <!--========== END HEADER ==========-->
+    
 
     <!--========== PAGE LAYOUT ==========-->
-    <!-- Hero Section-->
-    <div class="bg-color-sky-light">
-        <section
-            style="background: url(img/1920x1080/01.jpg); background-size: cover; background-position: center center"
-            class="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <span style="color:#ffffff;font-size:50pt;font-weight:bold;">LOAF</span>
-                        <a href="#" class="hero-link"">Download</a>
-                            <p></p>
-                            <span style=" color:#ffffff;font-size:0pt;font-weight:400;">
-                            <font style="font-size:15pt;">the first </font>
-                            <font style="font-size:18pt;color:#07cce2;font-weight:800;">l</font>
-                            <font style="font-size:15pt;">arge-scale </font>
-                            <font style="font-size:18pt;color:#07cce2;font-weight:800;">o</font>
-                            <font style="font-size:15pt;">verhe</font>
-                            <font style="font-size:18pt;color:#07cce2;font-weight:800;">a</font>
-                            <font style="font-size:15pt;">d </font>
-                            <font style="font-size:18pt;color:#07cce2;font-weight:800;">f</font>
-                            <font style="font-size:15pt;">isheye</font>
-                            </span>
-                            <p></p>
-                            <span style="color:#ffffff;font-size:15pt;font-weight:400;"> dataset for person detection
-                                and localization.</span>
-
-                    </div>
-                </div>
-                <!-- <a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll
-                        Down</a> -->
-            </div>
-        </section>
-    </div>
 
 
-
+    <!-- Research -->
     <div class="content-md container">
         <div class="row">
             <div class="col-md-12 breadcrumbs text-center">
-                <video width="1080" height="600" controls autoplay>
+                <span style="color:#439494;font-size:32pt;font-weight:300;font-family:Montserrat;">Dataset</span>
+            </div>
+        </div>
+        <h1></h1>
+        
+        <h1></h1>
+        
+        <h1></h1>
 
-                    <source src="movie.mp4" type="video/mp4">
-                    <object data="movie.mp4" width="1240" height="600">
-                        <embed width="1240" height="960" src="movie.mp4">
-
-                    </object>
-
-                </video>
+        <div class="row">
+            <div class="col-sm-12 sm-margin-b-50">
+                <p></p>
+                <span style="color:#3e4750;font-size:15pt;font-weight:300;font-family:Roboto;">The LOAF dataset is
+                    overhead fisheye dataset
+                    using the 360° perspective capabilities of fisheye
+                    camera. It comprises 43,542 high-resolution images with 457K radius align annotations of person
+                    body detection and localization.</span>
             </div>
         </div>
     </div>
+    <!-- End Research -->
 
 
 
+    <!-- 数据特性 -->
+    <div class="content-md container">
+        <div class="row">
+            <div class="col-md-12 breadcrumbs text-center">
+                <h1>Features</h1>
+            </div>
+        </div>
+        <h1></h1>
+
+        <div class="row">
+            <div class="col-sm-6 sm-margin-b-50">
+                <p></p>
+                <span style="color:#212529;font-size:15pt;font-weight:400;">Distinguished from most other datasets, LOAF
+                    adopts a vertical downward overhead approach using fisheye cameras, fixed at a height of 2.5 to 4
+                    meters, providing a 360-degree panoramic view.</span>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">
+                <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+            </div>
+        </div>
+    </div>
+    <!-- End 数据特性 -->
+
+    <!-- 数据采集 -->
+    <div class="content-md container">
+        <div class="row">
+            <div class="col-md-12 breadcrumbs text-center">
+                <h1>Collection</h1>
+            </div>
+        </div>
+        <h1></h1>
+
+        <div class="row">
+            <div class="col-sm-12 sm-margin-b-50">
+                <p></p>
+                <span style="color:#212529;font-size:15pt;font-weight:400;">we capture 110 fisheye image sequences in 80
+                    realistic scenarios as the raw data pool. The recorded sequences span 14 hrs; the image resolution
+                    is 2952×2952 pixels, and the frame rate is 10∼20 fps. Eventually, 43,542 images, sam pled at 1 fps,
+                    are collected to construct our LOAF dataset. </span>
+            </div>
+        </div>
+    </div>
+    <!-- End 数据采集 -->
+
+    <!-- 数据标注 -->
+    <div class="content-md container">
+        <div class="row">
+            <div class="col-md-12 breadcrumbs text-center">
+                <h1>Marking</h1>
+            </div>
+        </div>
+        <h1></h1>
+
+        <div class="row">
+            <div class="col-sm-12 sm-margin-b-50">
+                <p></p>
+                <span style="color:#212529;font-size:15pt;font-weight:400;">
+                    <font style="color:#17a1b9;font-size:15pt;font-weight:600;">Person Detection</font>
+                    We instead label each person through a radius-aligned rectangular box. fits well radially- oriented
+                    human bodies presented in fisheye images; and better corresponds to the actual position of human on
+                    the image plane, facilitating physical localization. around 458K human box annotations are obtained.
+                    High-quality annotation is ensured via a rigorous quality check, conducted by highly skilled
+                    reviewers.
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 sm-margin-b-50">
+                <p></p>
+                <span style="color:#212529;font-size:15pt;font-weight:400;">
+                    <font style="color:#17a1b9;font-size:15pt;font-weight:600;">Person Localization</font>
+                    For each annotated box, we can easily infer the standing position of the person in the image by
+                    utilizing the radius-align feature, and then use the mapping relationship to project each person
+                    into real-world space to obtain their location information.
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- End 数据标注 -->
+
+    <!-- 数据统计 -->
+    <div class="content-md container">
+        <div class="row">
+            <div class="col-md-12 breadcrumbs text-center">
+                <h1>Statistics</h1>
+            </div>
+        </div>
+        <h1></h1>
+
+        <div class="row">
+            <div class="col-sm-12 sm-margin-b-50">
+                <p></p>
+                <span style="color:#212529;font-size:15pt;font-weight:400;">LOAF distinguishes itself from three
+                    aspects: Large-scale: LOAF has 43,542 fisheye images with more than 457K person boxes. Moreover,
+                    LOAF data are captured by an advanced fisheye camera, which is capable of covering a larger area
+                    (200∼300 m2) with higher pedestrian density (2∼65 persons per scene, 10.5 in average). This makes
+                    LOAF the largest overhead fisheye dataset in terms of the total number of pedestrian and scene
+                    categories. </span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="img-responsive" src="img/dataset_1.png" alt="Our Office">
+            </div>
+        </div>
+        <h1></h1>
+
+        <div class="row">
+            <div class="col-sm-6 sm-margin-b-50">
+                <p></p>
+                <span style="color:#212529;font-size:15pt;font-weight:400;">LOAF distinguishes itself from three
+                    aspects: Large-scale: LOAF has 43,542 fisheye images with more than 457K person boxes. Moreover,
+                    LOAF data are captured by an advanced fisheye camera, which is capable of covering a larger area
+                    (200∼300 m2) with higher pedestrian density (2∼65 persons per scene, 10.5 in average). This makes
+                    LOAF the largest overhead fisheye dataset in terms of the total number of pedestrian and scene
+                    categories. </span>
+            </div>
+
+            <div class="col-sm-6">
+                <span style="color:#212529;font-size:15pt;font-weight:400;"></span>
+                <img class="img-responsive" src="img/dataset_2.png" alt="Our Office">
+            </div>
+        </div>
+
+    </div>
+    <!-- End 数据统计 -->
+
+
+    <!-- Features -->
+    <div class="section-seperator">
+        <div class="content-md container">
+            <div class="row">
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                        <h3>Art Of Coding</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret
+                            dolore magna ut consequat siad esqudiat dolor</p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 sm-margin-b-50">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                        <h3>Clean Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret
+                            dolore magna ut consequat siad esqudiat dolor</p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                        <h3>Amazing Support</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret
+                            dolore magna ut consequat siad esqudiat dolor</p>
+                        <a class="link" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </div>
+    <!-- End Features -->
+
+ 
     <!--========== END PAGE LAYOUT ==========-->
 
     <!--========== FOOTER ==========-->
@@ -207,7 +348,6 @@
                 <!--// end row -->
             </div>
         </div>
-        <!-- git  arxiv web  policy email -->
         <!-- End Links -->
 
         <!-- Copyright -->

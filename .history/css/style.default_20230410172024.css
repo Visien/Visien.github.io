@@ -427,7 +427,7 @@ div[class*="-btn"] {
   nav.navbar .container {
     width: 100%;
   }
-  .breadcrumb li {
+  .breadcrumb li {p
     display: block;
     width: 100%;
     text-align: center;

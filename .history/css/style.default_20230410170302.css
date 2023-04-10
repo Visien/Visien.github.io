@@ -450,7 +450,7 @@ div[class*="-btn"] {
   margin-left: 20px;
   padding-left: 20px;
   border-left: 1px solid #ddd;
-  height: 0px;
+  height: 20px;
   line-height: 20px;
 }
 

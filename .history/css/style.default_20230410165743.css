@@ -103,9 +103,7 @@ h1:hover a {
   border: 1px solid #eee;
 }
 
-.widget header {
-  margin-bottom: 20px;
-}
+
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 .category a {
   color: #999;
@@ -441,6 +439,8 @@ div[class*="-btn"] {
 */
 .navbar {
   background: #fff;
+  /* padding-top: 20px !important;
+  padding-bottom: 20px !important; */
   z-index: 9998;
   border-bottom: 1px solid #ddd;
 }
@@ -450,7 +450,7 @@ div[class*="-btn"] {
   margin-left: 20px;
   padding-left: 20px;
   border-left: 1px solid #ddd;
-  height: 0px;
+  height: 20px;
   line-height: 20px;
 }
 

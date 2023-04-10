@@ -442,6 +442,7 @@ div[class*="-btn"] {
 .navbar {
   background: #fff;
   z-index: 9998;
+  height: ;
   border-bottom: 1px solid #ddd;
 }
 
