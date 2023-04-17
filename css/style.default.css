@@ -409,11 +409,11 @@ a.hero-link::after {
 }
 
 a.hero-link:hover {
-  color: #999 !important;
+  color: #fff !important;
 }
 
 a.hero-link:hover::after {
-  background: #999;
+  background: #fff;
 }
 
 div[class*="-btn"] {
