@@ -198,14 +198,14 @@
 
                 <div class="row">
                     <span style="color:#212529;font-size:16px;font-weight:500;font-family: Hind, sans-serif">
-                    <a style="color:#212529;font-size:16px;font-weight:500;font-family: Hind, sans-serif;width: 100px;"
-                        href="https://drive.google.com/file/d/1B13QUiE82xf7N6nVHclb4ErN-Zuai-sZ/view?usp=share_link">Arxiv</a>
-                    |
-                    <a style="color:#212529;font-size:16px;font-weight:500;font-family: Hind, sans-serif;width: 100px;"
-                        href="https://drive.google.com/file/d/1B13QUiE82xf7N6nVHclb4ErN-Zuai-sZ/view?usp=share_link">Github</a>
+                        <a style="color:#212529;font-size:16px;font-weight:500;font-family: Hind, sans-serif;width: 100px;"
+                            href="https://arxiv.org/list/cs.CV/recent">Arxiv</a>
                         |
-                    <a style="color:#212529;font-size:16px;font-weight:500;font-family: Hind, sans-serif;width: 100px;"
-                        href="https://drive.google.com/file/d/1B13QUiE82xf7N6nVHclb4ErN-Zuai-sZ/view?usp=share_link">Email</a>
+                        <a style="color:#212529;font-size:16px;font-weight:500;font-family: Hind, sans-serif;width: 100px;"
+                            href="https://github.com/BUPT-PRIV/LOAF">Github</a>
+                        |
+                        <a id="copyTextClick" style="color:#212529;font-size:16px;font-weight:500;font-family: Hind, sans-serif;width: 100px;"
+                            data-clipboard-text="priv@bupt.edu.cn">Email</a>
                     </span>
                 </div>
                 <!--// end row -->
@@ -249,11 +249,23 @@
     <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 
     <!-- PAGE LEVEL SCRIPTS -->
+    <script src="js/clipboard.js" type="text/javascript"></script>
     <script src="js/layout.min.js" type="text/javascript"></script>
     <script src="js/components/swiper.min.js" type="text/javascript"></script>
     <script src="js/components/masonry.min.js" type="text/javascript"></script>
 
 </body>
 <!-- END BODY -->
+<script>
+    var clipboard = new Clipboard('#copyTextClick');
+    clipboard.on('success', function(e) {
+        alert("Email has been successfully copied.")
+        e.clearSelection();
+    });
+    clipboard.on('error', function(e) {
+        alert("Failed to get email.");
+    });
+    $("#copyTextClick").click();
+</script>
 
 </html>
