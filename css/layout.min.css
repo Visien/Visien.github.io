@@ -343,7 +343,7 @@ fieldset[disabled] .btn-theme {
 
 .footer .footer-logo {
 	width: 85px;
-	height: 21px
+	height: 28px
 }
 
 .footer .footer-list {
@@ -445,10 +445,10 @@ fieldset[disabled] .btn-theme {
 
 .header .navbar-logo-img {
 	display: inline-block;
-	width: 150px;
+	width: 180px;
 	height: auto;
-	max-width: 150%;
-	max-height: 150%;
+	max-width: 180%;
+	max-height: 180%;
 	vertical-align: middle
 }
 

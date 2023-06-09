@@ -395,7 +395,7 @@ a.hero-link {
   font-size: 1em;
   text-decoration: none !important;
   margin-top: 20px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 a.hero-link::after {
@@ -403,17 +403,17 @@ a.hero-link::after {
   width: 100%;
   height: 1px;
   display: block;
-  background: #fff;
+  background: #000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 a.hero-link:hover {
-  color: #fff !important;
+  color: #07cce2 !important;
 }
 
 a.hero-link:hover::after {
-  background: #fff;
+  background: #07cce2;
 }
 
 div[class*="-btn"] {
